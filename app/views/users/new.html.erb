@@ -6,12 +6,13 @@
     <div class="error_messages">
       <h2>Form is invalid</h2>
       <ul>
-        <% @user.errors.ful_messages.each do |msg| %>
+        <% @user.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
         <% end %>
       </ul>
     </div>
   <% end %>
+  <!-- Whatever is written in the txtfield will be put to a variable :symbol. you can name it anything.s -->
   <div class="field">
     <%= f.label :name %> <br/>
     <%= f.text_field :name %>
